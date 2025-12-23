@@ -97,17 +97,34 @@ Microsoft_AI_Course/
 └── eslint.config.js                     # ESLint configuration
 ```
 
-## 🌐 Deployment to Azure Static Web Apps
+## 🌐 Deployment
 
-This project is configured for deployment to Azure Static Web Apps:
+This project is deployed to **GitHub Pages** at:
+**[https://markkatsdesign.github.io/Microsoft_AI_Course](https://markkatsdesign.github.io/Microsoft_AI_Course)**
 
-1. Build settings:
+### Deploy to GitHub Pages
 
-   - **Build command**: `npm run build`
-   - **Output directory**: `dist`
-   - **App location**: `/`
+The project is configured for automatic deployment to GitHub Pages:
 
-2. The app uses client-side routing, so ensure your Static Web App is configured accordingly.
+1. **Make your changes** and commit them:
+   ```bash
+   git add .
+   git commit -m "Your changes"
+   git push
+   ```
+
+2. **Deploy to GitHub Pages**:
+   ```bash
+   npm run deploy
+   ```
+
+3. Your site will be live at `https://markkatsdesign.github.io/Microsoft_AI_Course` in 1-2 minutes!
+
+### How It Works
+
+- The `npm run deploy` command builds your app and pushes it to the `gh-pages` branch
+- GitHub Pages automatically serves the content from that branch
+- Free hosting with automatic HTTPS included!
 
 ## 🤝 Contributing
 
