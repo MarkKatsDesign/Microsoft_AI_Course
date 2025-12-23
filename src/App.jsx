@@ -12,16 +12,19 @@ import StatisticalVisualGuide from "./statistical-text-analysis-guide.jsx";
 
 const guides = [
   {
-    name: "Deep Learning Visual Guide",
+    name: "Deep Learning",
     component: <DeepLearningVisualGuide />,
   },
-  { name: "Clustering Visual Guide", component: <ClusteringVisualGuide /> },
-  { name: "Multiclass Visual Guide", component: <MulticlassVisualGuide /> },
-  { name: "LLM Visual Guide", component: <LLMVisualGuide /> },
-  { name: "Prompts Visual Guide", component: <PromptsVisualGuide /> },
-  { name: "AI Agents Visual Guide", component: <AirVisualGuide /> },
-  { name: "Tokenization Visual Guide", component: <TokenizationVisualGuide /> },
-  { name: "Statistical Visual Guide", component: <StatisticalVisualGuide /> },
+  { name: "Clustering", component: <ClusteringVisualGuide /> },
+  { name: "Multiclass", component: <MulticlassVisualGuide /> },
+  { name: "LLM", component: <LLMVisualGuide /> },
+  { name: "Prompts", component: <PromptsVisualGuide /> },
+  { name: "AI Agents", component: <AirVisualGuide /> },
+  { name: "Tokenization", component: <TokenizationVisualGuide /> },
+  {
+    name: "Statistical Text Analysis",
+    component: <StatisticalVisualGuide />,
+  },
 ];
 
 function App() {

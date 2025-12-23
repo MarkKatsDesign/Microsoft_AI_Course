@@ -57,30 +57,30 @@ const simpleStem = (word) => {
   if (word.length <= 3) return word; // Don't stem very short words
 
   // Remove common verb endings
-  if (word.endsWith('ing') && word.length > 5) {
+  if (word.endsWith("ing") && word.length > 5) {
     return word.slice(0, -3); // running → runn (will be normalized)
   }
-  if (word.endsWith('ed') && word.length > 4) {
+  if (word.endsWith("ed") && word.length > 4) {
     const base = word.slice(0, -2);
     // Handle doubled consonants: enabled → enable, powered → power
-    if (base.length > 2 && base[base.length-1] === base[base.length-2]) {
+    if (base.length > 2 && base[base.length - 1] === base[base.length - 2]) {
       return base.slice(0, -1);
     }
     return base;
   }
 
   // Remove plural 's' or 'es'
-  if (word.endsWith('sses')) {
+  if (word.endsWith("sses")) {
     return word.slice(0, -2); // businesses → business
   }
-  if (word.endsWith('ies') && word.length > 4) {
-    return word.slice(0, -3) + 'y'; // entries → entry
+  if (word.endsWith("ies") && word.length > 4) {
+    return word.slice(0, -3) + "y"; // entries → entry
   }
-  if (word.endsWith('es') && word.length > 4) {
+  if (word.endsWith("es") && word.length > 4) {
     // experiences → experience
     return word.slice(0, -2);
   }
-  if (word.endsWith('s') && word.length > 3 && !word.endsWith('ss')) {
+  if (word.endsWith("s") && word.length > 3 && !word.endsWith("ss")) {
     // decisions → decision, tasks → task, but not 'business' → 'busines'
     return word.slice(0, -1);
   }
@@ -170,8 +170,9 @@ const FrequencyAnalysis = () => {
 
           <div className="mt-3 bg-purple-50 rounded-lg p-3 border border-purple-200">
             <p className="text-xs text-purple-700">
-              <strong>🌱 Note:</strong> Words are stemmed before counting (e.g., "businesses" → "business", "decisions" → "decision")
-              to group related terms together for more accurate analysis.
+              <strong>🌱 Note:</strong> Words are stemmed before counting (e.g.,
+              "businesses" → "business", "decisions" → "decision") to group
+              related terms together for more accurate analysis.
             </p>
           </div>
         </div>
@@ -183,11 +184,12 @@ const FrequencyAnalysis = () => {
 const TFIDFSection = () => {
   const [selectedDoc, setSelectedDoc] = useState("A");
   const [showTFIDF, setShowTFIDF] = useState(false);
+  const [showFullText, setShowFullText] = useState(false);
 
   const documents = {
     A: {
       title: "Sample A: Copilot Studio",
-      text: "Microsoft Copilot Studio enables declarative AI agent creation using natural language, prompts, and templates...",
+      text: "Microsoft Copilot Studio enables declarative AI agent creation using natural language, prompts, and templates. With this declarative approach, an AI agent is configured rather than programmed: makers define intents, actions, and data connections, then publish the agent to channels. Microsoft Copilot Studio simplifies agent orchestration, governance, and lifecycles so an AI agent can be iterated quickly. Using Microsoft Copilot Studio helps modern businesses deploy Microsoft AI agent solutions fast.",
       frequency: [
         { term: "agent", tf: 6 },
         { term: "ai", tf: 4 },
@@ -204,7 +206,7 @@ const TFIDFSection = () => {
     },
     B: {
       title: "Sample B: Microsoft Foundry",
-      text: "Microsoft Foundry enables code-based AI agent development with SDKs and APIs...",
+      text: "Microsoft Foundry enables code-based AI agent development with SDKs and APIs. Developers write code to implement agent conversations, tool calling, state management, and custom pipelines. In Microsoft Foundry, engineers can use Python or Microsoft C#, integrate Microsoft AI services, and manage CI/CD to deploy the AI agent. This code-first development model supports extensibility and performance while building Microsoft Foundry AI agent applications.",
       frequency: [
         { term: "microsoft", tf: 5 },
         { term: "agent", tf: 4 },
@@ -249,6 +251,61 @@ const TFIDFSection = () => {
             {documents[id].title}
           </button>
         ))}
+      </div>
+
+      {/* Full text display */}
+      <div className="mb-4">
+        <button
+          onClick={() => setShowFullText(!showFullText)}
+          className="text-sm text-purple-600 hover:text-purple-800 underline mb-2"
+        >
+          {showFullText
+            ? "▼ Hide full texts"
+            : "▶ Show full texts being analyzed"}
+        </button>
+
+        {showFullText && (
+          <div className="grid md:grid-cols-2 gap-4 mt-2">
+            <div
+              className={`rounded-xl p-4 border-2 transition-all ${
+                selectedDoc === "A"
+                  ? "border-purple-400 bg-purple-50"
+                  : "border-gray-200 bg-gray-50"
+              }`}
+            >
+              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                <span
+                  className={`w-3 h-3 rounded-full ${
+                    selectedDoc === "A" ? "bg-purple-500" : "bg-gray-400"
+                  }`}
+                ></span>
+                Sample A: Copilot Studio
+              </h4>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {documents.A.text}
+              </p>
+            </div>
+            <div
+              className={`rounded-xl p-4 border-2 transition-all ${
+                selectedDoc === "B"
+                  ? "border-purple-400 bg-purple-50"
+                  : "border-gray-200 bg-gray-50"
+              }`}
+            >
+              <h4 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                <span
+                  className={`w-3 h-3 rounded-full ${
+                    selectedDoc === "B" ? "bg-purple-500" : "bg-gray-400"
+                  }`}
+                ></span>
+                Sample B: Microsoft Foundry
+              </h4>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {documents.B.text}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="grid md:grid-cols-2 gap-4 mb-4">
