@@ -9,6 +9,7 @@ import PromptsVisualGuide from "./prompts-visual-guide.jsx";
 import AirVisualGuide from "./ai-agents-visual-guide.jsx";
 import TokenizationVisualGuide from "./tokenization-visual-guide.jsx";
 import StatisticalVisualGuide from "./statistical-text-analysis-guide.jsx";
+import SemanticSearchVisualGuide from "./semantic-models-visual-guide.jsx";
 
 const guides = [
   {
@@ -25,6 +26,7 @@ const guides = [
     name: "Statistical Text Analysis",
     component: <StatisticalVisualGuide />,
   },
+  { name: "Semantic Search", component: <SemanticSearchVisualGuide /> },
 ];
 
 function App() {
