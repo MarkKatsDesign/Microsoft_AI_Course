@@ -7,6 +7,7 @@ A collection of interactive, visual learning guides for understanding AI, NLP, a
 This project contains interactive visual guides covering:
 
 ### 🤖 AI Agents
+
 - Understanding AI agents vs chatbots
 - Components of an AI agent (LLM, Instructions, Tools)
 - Types of tools (Knowledge & Action)
@@ -14,6 +15,7 @@ This project contains interactive visual guides covering:
 - Real-world applications
 
 ### 🔤 Tokenization & Text Preprocessing
+
 - What is tokenization and why it matters
 - Token frequency analysis
 - Text normalization techniques
@@ -24,6 +26,7 @@ This project contains interactive visual guides covering:
 - Complete NLP pipeline visualization
 
 ### 📊 Statistical Text Analysis
+
 - Frequency analysis with stemming
 - TF-IDF (Term Frequency-Inverse Document Frequency)
 - Bag-of-Words model
@@ -34,23 +37,27 @@ This project contains interactive visual guides covering:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher recommended)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MarkKatsDesign/Microsoft_AI_Course
 cd Microsoft_AI_Course
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -95,6 +102,7 @@ Microsoft_AI_Course/
 This project is configured for deployment to Azure Static Web Apps:
 
 1. Build settings:
+
    - **Build command**: `npm run build`
    - **Output directory**: `dist`
    - **App location**: `/`
@@ -104,6 +112,7 @@ This project is configured for deployment to Azure Static Web Apps:
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Add new visual guides
 - Improve existing visualizations
 - Fix bugs or typos
@@ -116,6 +125,7 @@ This project is for educational purposes.
 ## 🎓 Learning Objectives
 
 By exploring these interactive guides, you will:
+
 - Understand fundamental NLP concepts through hands-on visualization
 - Learn how AI agents work and their components
 - Master text preprocessing techniques essential for NLP
@@ -125,7 +135,9 @@ By exploring these interactive guides, you will:
 ## 🔧 Troubleshooting
 
 ### Build issues
+
 If you encounter build errors, try:
+
 ```bash
 rm -rf node_modules
 rm package-lock.json
@@ -133,6 +145,7 @@ npm install
 ```
 
 ### Port already in use
+
 If port 5173 is already in use, Vite will automatically use the next available port.
 
 ---
