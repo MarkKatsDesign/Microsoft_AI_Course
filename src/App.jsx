@@ -43,13 +43,13 @@ function App() {
     <div
       className="App"
       style={{
-        padding: "12px 16px",
+        padding: "4px 8px",
         fontFamily: "sans-serif",
         background: "#f3f4f6",
         minHeight: "100vh",
       }}
     >
-      <div style={{ maxWidth: "1600px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1880px", margin: "0 auto" }}>
         <h1
           style={{
             marginBottom: 16,
