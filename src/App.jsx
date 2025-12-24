@@ -12,6 +12,7 @@ import StatisticalVisualGuide from "./statistical-text-analysis-guide.jsx";
 import SemanticSearchVisualGuide from "./semantic-models-visual-guide.jsx";
 import SpeechSolutionsVisualGuide from "./speech-solutions-visual-guide.jsx";
 import SpeechRecognitionPipelineVisualGuide from "./speech-recognition-pipeline-visual-guide.jsx";
+import SpeechSynthesisVisualGuide from "./speech-synthesis-pipeline-guide.jsx";
 
 const guides = [
   {
@@ -33,6 +34,10 @@ const guides = [
   {
     name: "Speech Recognition Pipeline",
     component: <SpeechRecognitionPipelineVisualGuide />,
+  },
+  {
+    name: "Speech Synthesis Pipeline",
+    component: <SpeechSynthesisVisualGuide />,
   },
 ];
 
