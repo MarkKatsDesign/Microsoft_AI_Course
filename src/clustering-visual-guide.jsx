@@ -5,7 +5,7 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
@@ -48,7 +48,7 @@ const FlowerIcon = ({ leaves, petals, color = "#888", size = 30 }) => (
 
 const ConceptIntro = () => (
   <Section title="🔍 What is Clustering?" color="#3b82f6">
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <div>
         <div className="bg-blue-50 rounded-xl p-4 mb-4 border-2 border-blue-200">
           <h3 className="font-bold text-blue-800 mb-2">Supervised Learning</h3>
@@ -114,7 +114,7 @@ const FlowerDataSection = () => {
         we find natural groupings?
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div>
           <h3 className="font-semibold mb-3">The Data (No Labels!):</h3>
           <div className="bg-gray-50 rounded-lg p-4 max-h-64 overflow-auto">
@@ -364,7 +364,7 @@ const KMeansAnimation = () => {
 
   return (
     <Section title="⚙️ K-Means Algorithm: Step by Step" color="#8b5cf6">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div>
           <div className="flex gap-2 mb-4">
             <button
@@ -713,7 +713,7 @@ const EvaluationSection = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div className="bg-green-50 rounded-xl p-4 border border-green-200">
           {metrics[selectedMetric].visual}
         </div>
@@ -735,7 +735,7 @@ const EvaluationSection = () => {
 
 const ComparisonSection = () => (
   <Section title="🎯 Good vs Bad Clusters" color="#f59e0b">
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <div className="bg-green-50 rounded-xl p-4 border-2 border-green-400">
         <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
           ✅ Good Clustering
@@ -881,8 +881,8 @@ const SummarySection = () => (
 
 export default function ClusteringGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🌸 Clustering & K-Means

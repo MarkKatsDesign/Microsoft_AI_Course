@@ -5,7 +5,7 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
@@ -42,9 +42,9 @@ const ConceptIntro = () => {
         </button>
       </div>
 
-      <div className="bg-gray-50 rounded-xl p-6">
+      <div className="bg-gray-50 rounded-xl px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         {direction === "stt" ? (
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
             <div className="text-center">
               <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mb-2 mx-auto">
                 <span className="text-4xl">🗣️</span>
@@ -91,7 +91,7 @@ const ConceptIntro = () => {
             </div>
           </div>
         ) : (
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
             <div className="text-center">
               <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-2 mx-auto">
                 <span className="text-4xl">📝</span>
@@ -891,7 +891,7 @@ const AzureIntegration = () => (
 const SummarySection = () => (
   <Section title="🎓 Key Takeaways" color="#1e293b">
     <div className="grid md:grid-cols-2 gap-4 mb-4">
-      <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-800 mb-2">
           🎤 Speech Recognition (STT)
         </h3>
@@ -900,7 +900,7 @@ const SummarySection = () => (
           meeting transcription, and healthcare documentation.
         </p>
       </div>
-      <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
         <h3 className="font-bold text-green-800 mb-2">
           🔊 Speech Synthesis (TTS)
         </h3>
@@ -909,7 +909,7 @@ const SummarySection = () => (
           alerts, e-learning, and entertainment.
         </p>
       </div>
-      <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
         <h3 className="font-bold text-purple-800 mb-2">
           🔄 Combined Experience
         </h3>
@@ -918,7 +918,7 @@ const SummarySection = () => (
           service, IVR, language learning, vehicle controls.
         </p>
       </div>
-      <div className="bg-linear-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-800 mb-2">⚠️ Key Considerations</h3>
         <p className="text-sm text-amber-700">
           Audio quality, language support, privacy/compliance, latency, and
@@ -941,8 +941,8 @@ const SummarySection = () => (
 
 export default function SpeechSolutionsGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🎤 Speech-Enabled Solutions

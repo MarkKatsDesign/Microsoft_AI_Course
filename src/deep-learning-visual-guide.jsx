@@ -1183,8 +1183,8 @@ const SummarySection = () => (
 
 export default function DeepLearningGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🧠 Deep Learning & Neural Networks

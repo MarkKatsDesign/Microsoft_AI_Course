@@ -5,13 +5,13 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
 const ConceptIntro = () => (
   <Section title="💬 What are Large Language Models?" color="#8b5cf6">
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <div>
         <p className="text-gray-700 mb-4">
           Think of LLMs as <strong>super-powered autocomplete</strong>. Your
@@ -192,7 +192,7 @@ const EmbeddingsSection = () => {
         similar vectors!
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div>
           <h3 className="font-semibold mb-3">Click a token to explore:</h3>
           <div className="flex flex-wrap gap-2 mb-4">
@@ -907,8 +907,8 @@ const SummarySection = () => (
 
 export default function LLMGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🧠 Large Language Models (LLMs)

@@ -5,7 +5,7 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
@@ -920,21 +920,21 @@ const ComparisonSection = () => {
 const SummarySection = () => (
   <Section title="🎓 Key Takeaways" color="#1e293b">
     <div className="grid md:grid-cols-2 gap-4 mb-4">
-      <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-800 mb-2">📊 Frequency Analysis</h3>
         <p className="text-sm text-blue-700">
           Count words to find main topics. Simple but effective for single
           documents.
         </p>
       </div>
-      <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
         <h3 className="font-bold text-purple-800 mb-2">🎯 TF-IDF</h3>
         <p className="text-sm text-purple-700">
           TF × IDF = words frequent HERE but rare ELSEWHERE. Perfect for
           comparing documents.
         </p>
       </div>
-      <div className="bg-linear-to-br from-red-50 to-red-100 rounded-xl p-4 border border-red-200">
+      <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-4 border border-red-200">
         <h3 className="font-bold text-red-800 mb-2">
           📧 Bag-of-Words + Naive Bayes
         </h3>
@@ -943,7 +943,7 @@ const SummarySection = () => (
           sentiment analysis.
         </p>
       </div>
-      <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
         <h3 className="font-bold text-green-800 mb-2">🔗 TextRank</h3>
         <p className="text-sm text-green-700">
           Graph-based algorithm for extractive summarization. Like PageRank for
@@ -967,8 +967,8 @@ const SummarySection = () => (
 
 export default function StatisticalTextAnalysisGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             📊 Statistical Text Analysis

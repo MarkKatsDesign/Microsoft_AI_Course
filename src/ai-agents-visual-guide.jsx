@@ -5,13 +5,13 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
 const ConceptIntro = () => (
   <Section title="🤖 What are AI Agents?" color="#8b5cf6">
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <div>
         <p className="text-gray-700 mb-4">
           AI agents aren't just chatbots that <em>answer</em> questions —
@@ -134,7 +134,7 @@ const AgentComponents = () => {
         explore:
       </p>
 
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         {/* Visual diagram */}
         <div className="md:w-1/2">
           <svg viewBox="0 0 300 280" className="w-full h-72">
@@ -1025,8 +1025,8 @@ const SummarySection = () => (
 
 export default function AIAgentsGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🤖 AI Agents

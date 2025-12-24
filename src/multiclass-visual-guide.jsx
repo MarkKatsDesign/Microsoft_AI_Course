@@ -39,7 +39,7 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
@@ -186,7 +186,7 @@ const OvRvsMN = () => {
               One function outputs ALL probabilities at once (they sum to 100%):
             </strong>
           </p>
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="bg-gray-50 rounded-xl px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
             <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-lg font-mono bg-white px-3 py-1 rounded border">
                 f(x)
@@ -438,7 +438,7 @@ const MetricsSection = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div>
           <h3 className="font-semibold mb-3">
             The 2x2 breakdown for "{data.name}":
@@ -552,7 +552,7 @@ const MetricsSection = () => {
 const SummarySection = () => (
   <Section title="🎓 Key Takeaways" color="#1e293b">
     <div className="grid md:grid-cols-2 gap-4">
-      <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-800 mb-2">
           🔢 Multiclass vs Binary
         </h3>
@@ -561,21 +561,21 @@ const SummarySection = () => (
           probabilities for EACH class.
         </p>
       </div>
-      <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
         <h3 className="font-bold text-purple-800 mb-2">🔀 Two Approaches</h3>
         <p className="text-sm text-purple-700">
           <strong>OvR:</strong> Train separate "is it X?" classifiers.{" "}
           <strong>Multinomial:</strong> One function, all probabilities at once.
         </p>
       </div>
-      <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
         <h3 className="font-bold text-green-800 mb-2">📊 Confusion Matrix</h3>
         <p className="text-sm text-green-700">
           Diagonal = correct predictions. Off-diagonal = mistakes. Bigger
           numbers on diagonal = better model!
         </p>
       </div>
-      <div className="bg-linear-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-800 mb-2">📈 Metrics Matter</h3>
         <p className="text-sm text-amber-700">
           <strong>Precision:</strong> "When I say X, am I right?"{" "}
@@ -589,8 +589,8 @@ const SummarySection = () => (
 
 export default function MulticlassGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🐧 Multiclass Classification

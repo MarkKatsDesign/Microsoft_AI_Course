@@ -5,13 +5,13 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
 const ConceptIntro = () => (
   <Section title="💬 What is a Prompt?" color="#8b5cf6">
-    <div className="grid md:grid-cols-2 gap-6">
+    <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
       <div>
         <p className="text-gray-700 mb-4">
           A <strong>prompt</strong> is simply the input you give to an LLM. The
@@ -117,7 +117,7 @@ const PromptTypes = () => {
         </button>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div
           className={`rounded-xl p-5 border-2 transition-all ${
             activeType === "system"
@@ -729,7 +729,7 @@ const PromptTipsSection = () => {
         ))}
       </div>
 
-      <div className="bg-pink-50 rounded-xl p-6">
+      <div className="bg-pink-50 rounded-xl px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <h3 className="text-xl font-bold text-pink-800 mb-4 flex items-center gap-2">
           {current.icon} {current.title}
         </h3>
@@ -870,7 +870,7 @@ const InteractivePromptBuilder = () => {
 const SummarySection = () => (
   <Section title="🎓 Key Takeaways" color="#1e293b">
     <div className="grid md:grid-cols-2 gap-4 mb-4">
-      <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-800 mb-2">
           🔧 System vs User Prompts
         </h3>
@@ -879,7 +879,7 @@ const SummarySection = () => (
           are the actual questions/requests.
         </p>
       </div>
-      <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
         <h3 className="font-bold text-green-800 mb-2">
           📜 Conversation History
         </h3>
@@ -888,14 +888,14 @@ const SummarySection = () => (
           maintain context.
         </p>
       </div>
-      <div className="bg-linear-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-800 mb-2">📚 RAG</h3>
         <p className="text-sm text-amber-700">
           Retrieval Augmented Generation adds real documents to prompts for
           accurate, grounded answers.
         </p>
       </div>
-      <div className="bg-linear-to-br from-pink-50 to-pink-100 rounded-xl p-4 border border-pink-200">
+      <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-4 border border-pink-200">
         <h3 className="font-bold text-pink-800 mb-2">✨ Better Prompts</h3>
         <p className="text-sm text-pink-700">
           Be specific, add context, use examples, and request structure for
@@ -918,8 +918,8 @@ const SummarySection = () => (
 
 export default function PromptsGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             💬 Prompts & Prompt Engineering

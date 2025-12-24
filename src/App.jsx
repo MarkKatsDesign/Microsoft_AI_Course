@@ -43,44 +43,54 @@ function App() {
     <div
       className="App"
       style={{
-        padding: 24,
+        padding: "12px 16px",
         fontFamily: "sans-serif",
         background: "#f3f4f6",
         minHeight: "100vh",
       }}
     >
-      <h1 style={{ marginBottom: 24 }}>AI Visual Guides</h1>
-      <div
-        style={{
-          marginBottom: 24,
-          display: "flex",
-          flexWrap: "wrap",
-          gap: 12,
-          alignItems: "center",
-        }}
-      >
-        {guides.map((g, i) => (
-          <button
-            key={g.name}
-            onClick={() => setSelected(i)}
-            style={{
-              padding: "8px 16px",
-              borderRadius: 8,
-              border: "none",
-              background: selected === i ? "#6366f1" : "#e0e7ff",
-              color: selected === i ? "white" : "#3730a3",
-              fontWeight: "bold",
-              cursor: "pointer",
-              boxShadow: selected === i ? "0 2px 8px #6366f155" : "none",
-              transition: "all 0.2s",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {g.name}
-          </button>
-        ))}
+      <div style={{ maxWidth: "1600px", margin: "0 auto" }}>
+        <h1
+          style={{
+            marginBottom: 16,
+            fontSize: "clamp(1.5rem, 4vw, 2rem)",
+          }}
+        >
+          AI Visual Guides
+        </h1>
+        <div
+          style={{
+            marginBottom: 20,
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 8,
+            alignItems: "center",
+          }}
+        >
+          {guides.map((g, i) => (
+            <button
+              key={g.name}
+              onClick={() => setSelected(i)}
+              style={{
+                padding: "8px 12px",
+                borderRadius: 8,
+                border: "none",
+                background: selected === i ? "#6366f1" : "#e0e7ff",
+                color: selected === i ? "white" : "#3730a3",
+                fontWeight: "bold",
+                cursor: "pointer",
+                boxShadow: selected === i ? "0 2px 8px #6366f155" : "none",
+                transition: "all 0.2s",
+                whiteSpace: "nowrap",
+                fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
+              }}
+            >
+              {g.name}
+            </button>
+          ))}
+        </div>
+        <div>{guides[selected].component}</div>
       </div>
-      <div>{guides[selected].component}</div>
     </div>
   );
 }

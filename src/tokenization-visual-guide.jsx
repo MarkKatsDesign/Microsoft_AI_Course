@@ -5,7 +5,7 @@ const Section = ({ title, children, color = "#6366f1" }) => (
     <div className="px-6 py-4" style={{ backgroundColor: color }}>
       <h2 className="text-xl font-bold text-white">{title}</h2>
     </div>
-    <div className="p-6">{children}</div>
+    <div className="px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">{children}</div>
   </div>
 );
 
@@ -26,7 +26,7 @@ const ConceptIntro = () => {
 
   return (
     <Section title="🔤 What is Tokenization?" color="#8b5cf6">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gapx-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div>
           <p className="text-gray-700 mb-4">
             <strong>Tokenization</strong> is the first step in analyzing text.
@@ -700,33 +700,33 @@ const PipelineVisualization = () => {
 const SummarySection = () => (
   <Section title="🎓 Key Takeaways" color="#1e293b">
     <div className="grid md:grid-cols-2 gap-4 mb-4">
-      <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
+      <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
         <h3 className="font-bold text-purple-800 mb-2">🔤 Tokenization</h3>
         <p className="text-sm text-purple-700">
           Breaking text into tokens (words, sub-words) is the first step in any
           NLP task.
         </p>
       </div>
-      <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
         <h3 className="font-bold text-blue-800 mb-2">📝 Normalization</h3>
         <p className="text-sm text-blue-700">
           Lowercase + remove punctuation for consistency, but be aware of lost
           meaning.
         </p>
       </div>
-      <div className="bg-linear-to-br from-red-50 to-red-100 rounded-xl p-4 border border-red-200">
+      <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-4 border border-red-200">
         <h3 className="font-bold text-red-800 mb-2">🚫 Stop Words</h3>
         <p className="text-sm text-red-700">
           Remove common words (the, a, is) to focus on meaningful content.
         </p>
       </div>
-      <div className="bg-linear-to-br from-violet-50 to-violet-100 rounded-xl p-4 border border-violet-200">
+      <div className="bg-gradient-to-br from-violet-50 to-violet-100 rounded-xl p-4 border border-violet-200">
         <h3 className="font-bold text-violet-800 mb-2">🔗 N-Grams</h3>
         <p className="text-sm text-violet-700">
           Capture multi-word phrases: unigrams (1), bigrams (2), trigrams (3).
         </p>
       </div>
-      <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
         <h3 className="font-bold text-green-800 mb-2">
           🌱 Stemming/Lemmatization
         </h3>
@@ -735,7 +735,7 @@ const SummarySection = () => (
           accurate.
         </p>
       </div>
-      <div className="bg-linear-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-4 border border-amber-200">
         <h3 className="font-bold text-amber-800 mb-2">🏷️ POS Tagging</h3>
         <p className="text-sm text-amber-700">
           Label tokens with grammar roles (noun, verb, adj) for deeper
@@ -758,8 +758,8 @@ const SummarySection = () => (
 
 export default function TokenizationGuide() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-3 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🔤 Tokenization & Text Preprocessing
