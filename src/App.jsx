@@ -11,6 +11,7 @@ import TokenizationVisualGuide from "./tokenization-visual-guide.jsx";
 import StatisticalVisualGuide from "./statistical-text-analysis-guide.jsx";
 import SemanticSearchVisualGuide from "./semantic-models-visual-guide.jsx";
 import SpeechSolutionsVisualGuide from "./speech-solutions-visual-guide.jsx";
+import SpeechRecognitionPipelineVisualGuide from "./speech-recognition-pipeline-visual-guide.jsx";
 
 const guides = [
   {
@@ -29,6 +30,10 @@ const guides = [
   },
   { name: "Semantic Search", component: <SemanticSearchVisualGuide /> },
   { name: "Speech Solutions", component: <SpeechSolutionsVisualGuide /> },
+  {
+    name: "Speech Recognition Pipeline",
+    component: <SpeechRecognitionPipelineVisualGuide />,
+  },
 ];
 
 function App() {
@@ -45,7 +50,15 @@ function App() {
       }}
     >
       <h1 style={{ marginBottom: 24 }}>AI Visual Guides</h1>
-      <div style={{ marginBottom: 24, display: "flex", gap: 12 }}>
+      <div
+        style={{
+          marginBottom: 24,
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 12,
+          alignItems: "center",
+        }}
+      >
         {guides.map((g, i) => (
           <button
             key={g.name}
@@ -60,6 +73,7 @@ function App() {
               cursor: "pointer",
               boxShadow: selected === i ? "0 2px 8px #6366f155" : "none",
               transition: "all 0.2s",
+              whiteSpace: "nowrap",
             }}
           >
             {g.name}
