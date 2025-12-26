@@ -14,6 +14,7 @@ import SpeechSolutionsVisualGuide from "./speech-solutions-visual-guide.jsx";
 import SpeechRecognitionPipelineVisualGuide from "./speech-recognition-pipeline-visual-guide.jsx";
 import SpeechSynthesisVisualGuide from "./speech-synthesis-pipeline-guide.jsx";
 import ImageProcessingVisualGuide from "./image-processing-visual-guide.jsx";
+import CnnVisualGuide from "./cnn-visual-guide.jsx";
 
 const guides = [
   {
@@ -41,6 +42,7 @@ const guides = [
     component: <SpeechSynthesisVisualGuide />,
   },
   { name: "Image Processing", component: <ImageProcessingVisualGuide /> },
+  { name: "CNN", component: <CnnVisualGuide /> },
 ];
 
 function App() {
