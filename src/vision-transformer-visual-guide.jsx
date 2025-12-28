@@ -1166,7 +1166,7 @@ const SummarySection = () => (
 export default function VisionTransformerGuide() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 p-6">
-      <div className="max-w-[1536px] mx-auto">
+      <div className="max-w-384 mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             🎯 Vision Transformers & Multimodal Models
