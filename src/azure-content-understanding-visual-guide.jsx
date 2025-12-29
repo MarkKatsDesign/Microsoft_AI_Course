@@ -895,7 +895,7 @@ const SchemaFlexibilitySection = () => {
     <Section title="🎯 Schema Flexibility" color="#6366f1">
       <p className="text-gray-700 mb-4">
         The power of Azure Content Understanding is its ability to apply{" "}
-        <strong>custom schemas</strong>
+        <strong>custom schemas </strong>
         across different content types and handle variations automatically.
       </p>
 
