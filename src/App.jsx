@@ -18,6 +18,7 @@ import CnnVisualGuide from "./cnn-visual-guide.jsx";
 import VisionTransformerVisualGuide from "./vision-transformer-visual-guide.jsx";
 import OcrVisualGuide from "./ocr-visual-guide.jsx";
 import FieldExtractionAndMappingVisualGuide from "./field-extraction-visual-guide.jsx";
+import AzureContentUnderstandingGuide from "./azure-content-understanding-visual-guide.jsx";
 
 const guides = [
   {
@@ -51,6 +52,10 @@ const guides = [
   {
     name: "Field extraction and mapping",
     component: <FieldExtractionAndMappingVisualGuide />,
+  },
+  {
+    name: "Azure Content Understanding",
+    component: <AzureContentUnderstandingGuide />,
   },
 ];
 
