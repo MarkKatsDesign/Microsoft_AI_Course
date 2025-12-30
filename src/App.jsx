@@ -21,6 +21,7 @@ import FieldExtractionAndMappingVisualGuide from "./field-extraction-visual-guid
 import AzureContentUnderstandingVisualGuide from "./azure-content-understanding-visual-guide.jsx";
 import MLGettingStartedVisualGuide from "./ml-getting-started-visual-guide.jsx";
 import DataPreparationVisualGuide from "./data-preparation-visual-guide.jsx";
+import TrainModelVisualGuide from "./train-model-visual-guide.jsx";
 
 const guides = [
   {
@@ -61,6 +62,7 @@ const guides = [
   },
   { name: "ML Getting Started", component: <MLGettingStartedVisualGuide /> },
   { name: "Data Preparation", component: <DataPreparationVisualGuide /> },
+  { name: "Train Model", component: <TrainModelVisualGuide /> },
 ];
 
 function App() {
