@@ -19,6 +19,7 @@ import VisionTransformerVisualGuide from "./vision-transformer-visual-guide.jsx"
 import OcrVisualGuide from "./ocr-visual-guide.jsx";
 import FieldExtractionAndMappingVisualGuide from "./field-extraction-visual-guide.jsx";
 import AzureContentUnderstandingGuide from "./azure-content-understanding-visual-guide.jsx";
+import MLGettingStartedGuide from "./ml-getting-started-visual-guide.jsx";
 
 const guides = [
   {
@@ -57,6 +58,7 @@ const guides = [
     name: "Azure Content Understanding",
     component: <AzureContentUnderstandingGuide />,
   },
+  { name: "ML Getting Started", component: <MLGettingStartedGuide /> },
 ];
 
 function App() {
