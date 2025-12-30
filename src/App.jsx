@@ -18,8 +18,9 @@ import CnnVisualGuide from "./cnn-visual-guide.jsx";
 import VisionTransformerVisualGuide from "./vision-transformer-visual-guide.jsx";
 import OcrVisualGuide from "./ocr-visual-guide.jsx";
 import FieldExtractionAndMappingVisualGuide from "./field-extraction-visual-guide.jsx";
-import AzureContentUnderstandingGuide from "./azure-content-understanding-visual-guide.jsx";
-import MLGettingStartedGuide from "./ml-getting-started-visual-guide.jsx";
+import AzureContentUnderstandingVisualGuide from "./azure-content-understanding-visual-guide.jsx";
+import MLGettingStartedVisualGuide from "./ml-getting-started-visual-guide.jsx";
+import DataPreparationVisualGuide from "./data-preparation-visual-guide.jsx";
 
 const guides = [
   {
@@ -56,9 +57,10 @@ const guides = [
   },
   {
     name: "Azure Content Understanding",
-    component: <AzureContentUnderstandingGuide />,
+    component: <AzureContentUnderstandingVisualGuide />,
   },
-  { name: "ML Getting Started", component: <MLGettingStartedGuide /> },
+  { name: "ML Getting Started", component: <MLGettingStartedVisualGuide /> },
+  { name: "Data Preparation", component: <DataPreparationVisualGuide /> },
 ];
 
 function App() {
