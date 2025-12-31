@@ -22,6 +22,8 @@ import AzureContentUnderstandingVisualGuide from "./azure-content-understanding-
 import MLGettingStartedVisualGuide from "./ml-getting-started-visual-guide.jsx";
 import DataPreparationVisualGuide from "./data-preparation-visual-guide.jsx";
 import TrainModelVisualGuide from "./train-model-visual-guide.jsx";
+import IntegrateModelVisualGuide from "./integrate-model-visual-guide.jsx";
+import DataIngestionDesignVisualGuide from "./data-ingestion-design-visual-guide.jsx";
 
 const guides = [
   {
@@ -63,6 +65,11 @@ const guides = [
   { name: "ML Getting Started", component: <MLGettingStartedVisualGuide /> },
   { name: "Data Preparation", component: <DataPreparationVisualGuide /> },
   { name: "Train Model", component: <TrainModelVisualGuide /> },
+  { name: "Integrate Model", component: <IntegrateModelVisualGuide /> },
+  {
+    name: "Data Ingestion Design",
+    component: <DataIngestionDesignVisualGuide />,
+  },
 ];
 
 function App() {
