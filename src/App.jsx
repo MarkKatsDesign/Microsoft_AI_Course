@@ -24,6 +24,7 @@ import DataPreparationVisualGuide from "./data-preparation-visual-guide.jsx";
 import TrainModelVisualGuide from "./train-model-visual-guide.jsx";
 import IntegrateModelVisualGuide from "./integrate-model-visual-guide.jsx";
 import DataIngestionDesignVisualGuide from "./data-ingestion-design-visual-guide.jsx";
+import RealTimeVsBatchVisualGuide from "./realtime-vs-batch-visual-guide.jsx";
 
 const guides = [
   {
@@ -70,6 +71,7 @@ const guides = [
     name: "Data Ingestion Design",
     component: <DataIngestionDesignVisualGuide />,
   },
+  { name: "Real-time vs Batch", component: <RealTimeVsBatchVisualGuide /> },
 ];
 
 function App() {
