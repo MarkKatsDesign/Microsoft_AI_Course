@@ -26,6 +26,7 @@ import IntegrateModelVisualGuide from "./integrate-model-visual-guide.jsx";
 import DataIngestionDesignVisualGuide from "./data-ingestion-design-visual-guide.jsx";
 import RealTimeVsBatchVisualGuide from "./realtime-vs-batch-visual-guide.jsx";
 import GenAIApplicationsVisualGuide from "./genai-applications-visual-guide.jsx";
+import AzureLanguageTextAnalysisVisualGuide from "./azure-language-text-analysis-visual-guide.jsx";
 
 const guides = [
   {
@@ -74,6 +75,10 @@ const guides = [
   },
   { name: "Real-time vs Batch", component: <RealTimeVsBatchVisualGuide /> },
   { name: "GenAI Applications", component: <GenAIApplicationsVisualGuide /> },
+  {
+    name: "Azure Language Text Analysis",
+    component: <AzureLanguageTextAnalysisVisualGuide />,
+  },
 ];
 
 function App() {
