@@ -25,6 +25,7 @@ import TrainModelVisualGuide from "./train-model-visual-guide.jsx";
 import IntegrateModelVisualGuide from "./integrate-model-visual-guide.jsx";
 import DataIngestionDesignVisualGuide from "./data-ingestion-design-visual-guide.jsx";
 import RealTimeVsBatchVisualGuide from "./realtime-vs-batch-visual-guide.jsx";
+import GenAIApplicationsVisualGuide from "./genai-applications-visual-guide.jsx";
 
 const guides = [
   {
@@ -72,6 +73,7 @@ const guides = [
     component: <DataIngestionDesignVisualGuide />,
   },
   { name: "Real-time vs Batch", component: <RealTimeVsBatchVisualGuide /> },
+  { name: "GenAI Applications", component: <GenAIApplicationsVisualGuide /> },
 ];
 
 function App() {
