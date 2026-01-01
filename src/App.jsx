@@ -27,6 +27,7 @@ import DataIngestionDesignVisualGuide from "./data-ingestion-design-visual-guide
 import RealTimeVsBatchVisualGuide from "./realtime-vs-batch-visual-guide.jsx";
 import GenAIApplicationsVisualGuide from "./genai-applications-visual-guide.jsx";
 import AzureLanguageTextAnalysisVisualGuide from "./azure-language-text-analysis-visual-guide.jsx";
+import AzureVisionImageAnalysisVisualGuide from "./azure-vision-image-analysis-visual-guide.jsx";
 
 const guides = [
   {
@@ -78,6 +79,10 @@ const guides = [
   {
     name: "Azure Language Text Analysis",
     component: <AzureLanguageTextAnalysisVisualGuide />,
+  },
+  {
+    name: "Azure Vision Image Analysis",
+    component: <AzureVisionImageAnalysisVisualGuide />,
   },
 ];
 
